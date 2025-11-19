@@ -7,8 +7,8 @@ fi
 
 HTTP_MODE=${HTTP_MODE:-https}
 
-sed -i "s@https://pipedapi.kavin.rocks@${HTTP_MODE}://pipedapi.kavin.rocks@g" /usr/share/nginx/html/assets/*
-sed -i "s/pipedapi.kavin.rocks/${BACKEND_HOSTNAME}/g" /usr/share/nginx/html/assets/*
+sed -i "s@https://pipedapi.syncpundit.io@${HTTP_MODE}://pipedapi.kavin.rocks@g" /usr/share/nginx/html/assets/*
+sed -i "s/pipedapi.syncpundit.io/${BACKEND_HOSTNAME}/g" /usr/share/nginx/html/assets/*
 
 if [ -n "${HTTP_WORKERS}" ]; then
     sed -i "s/worker_processes  auto;/worker_processes  ${HTTP_WORKERS};/g" /etc/nginx/nginx.conf
