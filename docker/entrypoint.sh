@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -z "${BACKEND_HOSTNAME}" ]; then
+if [ -z "${127.0.0.1}" ]; then
     echo "BACKEND_HOSTNAME not set"
     exit 1
 fi
