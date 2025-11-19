@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -z "${BACKEND_HOSTNAME}" ]; then
+if [ -z "${pipedapi.kavin.rocks}" ]; then
     echo "BACKEND_HOSTNAME not set"
     exit 1
 fi
